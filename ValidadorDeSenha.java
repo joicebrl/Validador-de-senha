@@ -35,6 +35,10 @@ public class ValidadorDeSenha {
                 System.out.println(" - A senha deve ter um caracteres especial");
                 validacao = false;
             }
+            if (senha.matches("")) {
+                System.out.println(" - A senha não deve ser vazia");
+                validacao = false;
+            }
 
             if (validacao == true) {
                 break;
