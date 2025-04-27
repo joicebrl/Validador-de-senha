@@ -26,6 +26,11 @@ public class ValidadorDeSenha {
                 validacao = false;
             }
 
+            if (!senha.matches(".*[0-9].*")) {
+                System.out.println(" - A senha deve ter um número");
+                validacao = false;
+            }
+
             if (validacao == true) {
                 break;
             }
