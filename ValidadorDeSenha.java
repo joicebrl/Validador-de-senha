@@ -31,6 +31,11 @@ public class ValidadorDeSenha {
                 validacao = false;
             }
 
+            if (!senha.matches(".*[!@#$%^&*()-+].*")) {
+                System.out.println(" - A senha deve ter um caracteres especial");
+                validacao = false;
+            }
+
             if (validacao == true) {
                 break;
             }
