@@ -11,6 +11,16 @@ public class ValidadorDeSenha {
             System.out.println("Digite uma senha: ");
             senha = scanner.nextLine();
 
+            if (!senha.equals("batata")) {
+                System.out.println("Você não digitou batata");
+                validacao = false;
+            }
+
+            if (senha.equals("")) {
+                System.out.println("Você não digitou uma senha");
+                validacao = false;
+            }
+
             if (validacao == true) {
                 break;
             }
