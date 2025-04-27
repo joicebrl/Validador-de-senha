@@ -21,6 +21,11 @@ public class ValidadorDeSenha {
                 validacao = false;
             }
 
+            if (!senha.matches(".*[a-z].*")) {
+                System.out.println("A senha deve ter uma letra minúscula");
+                validacao = false;
+            }
+
             if (validacao == true) {
                 break;
             }
