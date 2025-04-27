@@ -8,7 +8,8 @@ public class ValidadorDeSenha {
         do {
             boolean validacao = true;
 
-            System.out.println("Rodou");
+            System.out.println("Digite uma senha: ");
+            senha = scanner.nextLine();
 
             if (validacao == true) {
                 break;
