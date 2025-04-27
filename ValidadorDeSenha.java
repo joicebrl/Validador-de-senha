@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class ValidadorDeSenha {
     public static void main(String[] args) {
         String senha = "";
-        Scanner scanner = new Scanner(System.in);
+        Scanner captura = new Scanner(System.in);
 
         do {
             boolean validacao = true;
 
             System.out.println("Digite uma senha: ");
-            senha = scanner.nextLine();
+            senha = captura.nextLine();
 
             if (!senha.equals("batata")) {
                 System.out.println("Você não digitou batata");
@@ -25,5 +25,8 @@ public class ValidadorDeSenha {
                 break;
             }
         } while (true);
+
+        captura.close();
+        System.out.println("Senha aceita!");
     }
 }
