@@ -11,13 +11,13 @@ public class ValidadorDeSenha {
             System.out.println("Digite uma senha: ");
             senha = captura.nextLine();
 
-            if (!senha.equals("batata")) {
-                System.out.println("Você não digitou batata");
+            if (!senha.matches(".{8,}")) {
+                System.out.println("A senha deve ter 8 ou mais caracteres");
                 validacao = false;
             }
 
-            if (senha.equals("")) {
-                System.out.println("Você não digitou uma senha");
+            if (!senha.matches(".*[A-Z].*")) {
+                System.out.println("A senha deve ter uma letra maiúscula");
                 validacao = false;
             }
 
